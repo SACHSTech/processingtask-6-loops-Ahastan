@@ -23,13 +23,44 @@ public class Sketch extends PApplet {
    * Called repeatedly, anything drawn to the screen goes here
    */
   public void draw() {
-	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
 
-    stroke(255);
-    line(50, 125, 70, 50);  
+    // Quadrant 1
+    for(int horizontal = 20; horizontal <= 200; horizontal = horizontal + 20)
+    {
+      for (int vertical = 20; vertical <= 200; vertical = vertical + 20){
+      
+      stroke(225);
+      line(horizontal, 0, horizontal, 200);
+
+      stroke(225);
+      line(0, vertical, 200, vertical);
+      }
+    }
+
+    //Quadrant 2
+    for(int circleX = 240; circleX < 370; circleX = circleX + 30)
+    {
+      for(int circleY = 40; circleY < 170; circleY = circleY + 30)
+      {
+        stroke(225);
+        fill(225);
+        ellipse(circleX, circleY, 15, 15);
+      }
+    }
+
+    //Quadrant 3
+    int r = 0;
+    int b = 0;
+    for(int i = 0; i <= 200; i++)
+    {
+      for(int j = 200; j <= 400; j++)
+      {
+        for(int a = 0; a < i; a++){
+          stroke(r, a, b);
+          line(i,j,i,400);
+        }
+      }
+    }
   }
   
   // define other methods down here.
