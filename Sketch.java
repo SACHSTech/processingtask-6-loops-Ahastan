@@ -7,7 +7,6 @@ public class Sketch extends PApplet {
    * Called once at the beginning of execution, put your size all in this method
    */
   public void settings() {
-	// put your size call here
     size(400, 400);
   }
 
@@ -55,22 +54,9 @@ public class Sketch extends PApplet {
       line(c,200, c, 400);
     }
     
-    //Quadrant 4
-    
-
-    // ellipse(300, 270, 30, 30);
-    // ellipse(320, 280, 30, 30);
-    // ellipse(330, 300, 30, 30);
-    // ellipse(320, 320, 30, 30);
-    // ellipse(300, 330, 30, 30);
-    // ellipse(280, 320, 30, 30);
-    // ellipse(270, 300, 30, 30);
-    // ellipse(280, 280, 30, 30);
-
-    
+    //Quadrant 4    
     strokeWeight(7);
     
-
     translate(300,300);
     for(int i = 0; i < 8; i++){
       stroke(7, 247, 51);
@@ -82,6 +68,4 @@ public class Sketch extends PApplet {
     fill(189, 96, 34);
     ellipse(0, 0, 40, 40);
   }
-  
-  // define other methods down here.
 }
