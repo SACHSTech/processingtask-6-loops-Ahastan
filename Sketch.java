@@ -29,10 +29,10 @@ public class Sketch extends PApplet {
     {
       for (int vertical = 20; vertical <= 200; vertical = vertical + 20){
       
-      stroke(225);
+      stroke(23, 183, 232);
       line(horizontal, 0, horizontal, 200);
 
-      stroke(225);
+      stroke(23, 183, 232);
       line(0, vertical, 200, vertical);
       }
     }
@@ -42,25 +42,45 @@ public class Sketch extends PApplet {
     {
       for(int circleY = 40; circleY < 170; circleY = circleY + 30)
       {
-        stroke(225);
-        fill(225);
+        stroke(23, 232, 159);
+        fill(23, 232, 159);
         ellipse(circleX, circleY, 15, 15);
       }
     }
 
     //Quadrant 3
-    int r = 0;
-    int b = 0;
-    for(int i = 0; i <= 200; i++)
+    for(int c = 0; c <= 200; c++)
     {
-      for(int j = 200; j <= 400; j++)
-      {
-        for(int a = 0; a < i; a++){
-          stroke(r, a, b);
-          line(i,j,i,400);
-        }
-      }
+      stroke(c,c,c);
+      line(c,200, c, 400);
     }
+    
+    //Quadrant 4
+    
+
+    // ellipse(300, 270, 30, 30);
+    // ellipse(320, 280, 30, 30);
+    // ellipse(330, 300, 30, 30);
+    // ellipse(320, 320, 30, 30);
+    // ellipse(300, 330, 30, 30);
+    // ellipse(280, 320, 30, 30);
+    // ellipse(270, 300, 30, 30);
+    // ellipse(280, 280, 30, 30);
+
+    
+    strokeWeight(7);
+    
+
+    translate(300,300);
+    for(int i = 0; i < 8; i++){
+      stroke(7, 247, 51);
+      rotate(TWO_PI/8);
+      line(0,0,50,0);
+    }
+
+    stroke(189, 96, 34);
+    fill(189, 96, 34);
+    ellipse(0, 0, 40, 40);
   }
   
   // define other methods down here.
